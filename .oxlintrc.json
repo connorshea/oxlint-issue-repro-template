@@ -1,8 +1,12 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "plugins": [
+    "react",
     "typescript"
   ],
+  "categories": {
+    "correctness": "off"
+  },
   "rules": {
     "no-unused-vars": [
       "error",
@@ -14,8 +18,8 @@
   "overrides": [
     {
       "files": [
-        "*.ts",
-        "*.tsx"
+        "**/*.ts",
+        "**/*.tsx"
       ],
       "rules": {
         "no-unused-vars": "error"
