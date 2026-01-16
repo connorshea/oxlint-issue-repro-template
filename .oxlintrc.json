@@ -1,29 +1,8 @@
 {
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": [
-    "react",
-    "typescript"
-  ],
-  "categories": {
-    "correctness": "off"
-  },
+  "plugins": ["typescript"],
+  "categories": { "correctness": "off" },
   "rules": {
-    "no-unused-vars": [
-      "error",
-      {
-        "varsIgnorePattern": "^React"
-      }
-    ],
-  },
-  "overrides": [
-    {
-      "files": [
-        "**/*.ts",
-        "**/*.tsx"
-      ],
-      "rules": {
-        "no-unused-vars": "error"
-      }
-    }
-  ]
+    // This rule will only be enabled if the typeAware linter option works :)
+    "typescript/no-misused-spread": "error",
+  }
 }
