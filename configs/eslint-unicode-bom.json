@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "eslint"
+  ],
+  "categories": {
+    "correctness": "off"
+  },
+  "rules": {
+    "eslint/unicode-bom": [
+      "error",
+      {
+        "require": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "typescript"
+  ],
+  "categories": {
+    "correctness": "off"
+  },
+  "rules": {
+    "typescript/consistent-indexed-object-style": [
+      "error",
+      {
+        "style": true
+      }
+    ]
+  }
+}

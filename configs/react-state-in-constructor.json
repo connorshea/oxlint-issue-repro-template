@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "categories": {
+    "correctness": "off"
+  },
+  "rules": {
+    "react/state-in-constructor": [
+      "error",
+      {
+        "mode": 123
+      }
+    ]
+  }
+}

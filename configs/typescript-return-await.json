@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "typescript"
+  ],
+  "categories": {
+    "correctness": "off"
+  },
+  "rules": {
+    "typescript/return-await": [
+      "error",
+      {
+        "allowIn": 1
+      }
+    ]
+  }
+}

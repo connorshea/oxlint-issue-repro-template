@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "unicorn"
+  ],
+  "categories": {
+    "correctness": "off"
+  },
+  "rules": {
+    "unicorn/switch-case-braces": [
+      "error",
+      {
+        "caseBraces": 123
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "vue"
+  ],
+  "categories": {
+    "correctness": "off"
+  },
+  "rules": {
+    "vue/define-props-declaration": [
+      "error",
+      {
+        "declaration": false
+      }
+    ]
+  }
+}

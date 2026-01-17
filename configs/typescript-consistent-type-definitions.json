@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "typescript"
+  ],
+  "categories": {
+    "correctness": "off"
+  },
+  "rules": {
+    "typescript/consistent-type-definitions": [
+      "error",
+      {
+        "style": 456
+      }
+    ]
+  }
+}

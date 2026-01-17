@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "unicorn"
+  ],
+  "categories": {
+    "correctness": "off"
+  },
+  "rules": {
+    "unicorn/explicit-length-check": [
+      "error",
+      {
+        "allowedTypes": 456
+      }
+    ]
+  }
+}

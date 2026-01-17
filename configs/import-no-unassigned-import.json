@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "import"
+  ],
+  "categories": {
+    "correctness": "off"
+  },
+  "rules": {
+    "import/no-unassigned-import": [
+      "error",
+      {
+        "allow": 123
+      }
+    ]
+  }
+}
