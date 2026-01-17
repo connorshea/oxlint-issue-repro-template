@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "jsPlugins": [
+    "./plugin/oxlint-plugin.ts"
+  ],
   "plugins": [
     "react",
     "typescript"
@@ -8,22 +11,6 @@
     "correctness": "off"
   },
   "rules": {
-    "no-unused-vars": [
-      "error",
-      {
-        "varsIgnorePattern": "^React"
-      }
-    ],
-  },
-  "overrides": [
-    {
-      "files": [
-        "**/*.ts",
-        "**/*.tsx"
-      ],
-      "rules": {
-        "no-unused-vars": "error"
-      }
-    }
-  ]
+    "glide/require-using-for-temp-prefs": "error"
+  }
 }
