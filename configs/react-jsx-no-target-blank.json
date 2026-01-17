@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "categories": {
+    "correctness": "off"
+  },
+  "rules": {
+    "react/jsx-no-target-blank": [
+      "error",
+      {
+        "enforce_dynamic_links": 123
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "unicorn"
+  ],
+  "categories": {
+    "correctness": "off"
+  },
+  "rules": {
+    "unicorn/no-array-reverse": [
+      "error",
+      {
+        "allow_as_expression": "nope"
+      }
+    ]
+  }
+}

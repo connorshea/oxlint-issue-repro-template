@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "import"
+  ],
+  "categories": {
+    "correctness": "off"
+  },
+  "rules": {
+    "import/no-absolute-path": [
+      "error",
+      {
+        "allow": "yes"
+      }
+    ]
+  }
+}
