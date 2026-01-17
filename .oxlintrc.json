@@ -11,6 +11,7 @@
     "correctness": "off"
   },
   "rules": {
-    "glide/require-using-for-temp-prefs": "error"
+    "example/require-using-for-temp-prefs": "error",
+    "example/too-many-methods": "error"
   }
 }

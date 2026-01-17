@@ -1,12 +1,27 @@
-// Source: https://github.com/glide-browser/glide/blob/265f237e5a5e201dd3e1e69228f0945005791453/.oxlint-plugin.mjs
-// glide-plugin.js
 import { definePlugin, defineRule } from "oxlint";
 
 const plugin = definePlugin({
   meta: {
-    name: "glide",
+    name: "example",
   },
   rules: {
+    "too-many-methods": defineRule({
+      meta: { type: "problem" },
+      // this type-errors, why?
+      create(context) {
+        return {
+          ClassDeclaration(node) {
+            const methodCount = node.body.body.filter(
+              (member) => member.type === "MethodDefinition"
+            ).length;
+            if (methodCount >= 3) {
+              context.report({ message: "Too many methods on this class! bad!", node });
+            }
+          },
+        };
+      },
+    }),
+    // Source: https://github.com/glide-browser/glide/blob/265f237e5a5e201dd3e1e69228f0945005791453/.oxlint-plugin.mjs
     "require-using-for-temp-prefs": defineRule({
       meta: { type: "problem" },
       // this type-errors, why?
