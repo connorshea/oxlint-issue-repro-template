@@ -21,9 +21,13 @@ cache:
   paths:
     - node_modules/
 
-test_async:
+test:
   stage: test
   script:
     - npm install
-    - npm run lint -- --format=gitlab
+    - npm run lint:gitlab
+  artifacts:
+    reports:
+      codequality:
+        - gitlab-report.json
 
